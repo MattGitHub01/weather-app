@@ -1,1 +1,1 @@
-# weather-app
+The Odin Project weather app: create a weather app using WeatherAPI
