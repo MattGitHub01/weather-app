@@ -1,0 +1,64 @@
+body {
+    background-color: lightblue;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 4rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.input-div {
+    display: flex;
+}
+
+.input-bar {
+    width: 25rem;
+    border: 2px solid black;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 2rem .5rem 4rem 1rem;
+}
+
+.input-btn {
+    margin: 2rem .5rem 4rem 1rem;
+}
+
+.todays-forecast {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 20rem;
+    background-color: blanchedalmond;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 2rem;
+    white-space: pre-wrap;
+}
+
+.three-day-div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.forecast-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
+    border: 2px solid black;
+    border-radius: 15px;
+    min-width: 10rem;
+    min-height: 10rem;
+    margin: 2rem;
+    white-space: pre-wrap;
+}
