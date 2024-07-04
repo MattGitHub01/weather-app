@@ -17,38 +17,6 @@ async function getWeather() {
     const inputBtn = document.createElement('button');
     inputBtn.classList.add('input-btn');
     inputBtn.textContent = `Search`;
-    inputDiv.appendChild(inputBtn);
-
-    const todaysForecast = document.createElement('div');
-    todaysForecast.classList.add('todays-forecast');
-    container.appendChild(todaysForecast);
-
-    const threeDayDiv = document.createElement('div');
-    threeDayDiv.classList.add('three-day-div');
-    container.appendChild(threeDayDiv);
-
-    const dayOneForecast = document.createElement('div');
-    dayOneForecast.classList.add('forecast-div');
-    threeDayDiv.appendChild(dayOneForecast);
-
-    const dayOneTxt = document.createElement('span');
-    dayOneForecast.appendChild(dayOneTxt);
-
-    const dayTwoForecast = document.createElement('div');
-    dayTwoForecast.classList.add('forecast-div');
-    threeDayDiv.appendChild(dayTwoForecast);
-
-    const dayTwoTxt = document.createElement('span');
-    dayTwoForecast.appendChild(dayTwoTxt);
-
-    const dayThreeForecast = document.createElement('div');
-    dayThreeForecast.classList.add('forecast-div');
-    threeDayDiv.appendChild(dayThreeForecast);
-
-    const dayThreeTxt = document.createElement('span');
-    dayThreeForecast.appendChild(dayThreeTxt);
-
-
     inputBtn.addEventListener('click', async () => {
         let input = inputBar.value;
         const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=e5c796bf6dad4abf835194705240107&q=${input}&days=3&aqi=no&alerts=no`, {mode: 'cors'});
@@ -71,8 +39,40 @@ async function getWeather() {
         } else {
             throw new Error(`${input.status}`);
         }
-        
     });
+    inputDiv.appendChild(inputBtn);
+
+    const todaysForecast = document.createElement('div');
+    todaysForecast.classList.add('todays-forecast');
+    container.appendChild(todaysForecast);
+
+    const threeDayDiv = document.createElement('div');
+    threeDayDiv.classList.add('three-day-div');
+    container.appendChild(threeDayDiv);
+
+    const dayOneForecast = document.createElement('div');
+    dayOneForecast.classList.add('forecast-div');
+    threeDayDiv.appendChild(dayOneForecast);
+
+    const dayOneTxt = document.createElement('span');
+    dayOneTxt.classList.add('forecast-txt');
+    dayOneForecast.appendChild(dayOneTxt);
+
+    const dayTwoForecast = document.createElement('div');
+    dayTwoForecast.classList.add('forecast-div');
+    threeDayDiv.appendChild(dayTwoForecast);
+
+    const dayTwoTxt = document.createElement('span');
+    dayTwoTxt.classList.add('forecast-txt');
+    dayTwoForecast.appendChild(dayTwoTxt);
+
+    const dayThreeForecast = document.createElement('div');
+    dayThreeForecast.classList.add('forecast-div');
+    threeDayDiv.appendChild(dayThreeForecast);
+
+    const dayThreeTxt = document.createElement('span');
+    dayThreeTxt.classList.add('forecast-txt');
+    dayThreeForecast.appendChild(dayThreeTxt);
 }
 
 getWeather()

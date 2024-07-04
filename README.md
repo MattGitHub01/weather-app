@@ -1,1 +1,1 @@
-The Odin Project weather app: create a weather app using WeatherAPI
+The Odin Project weather app prompt, create basic site implementing WeatherAPI. Webapp designed to display weather and weather forecast in a user selected city.

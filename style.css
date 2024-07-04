@@ -48,6 +48,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: 2rem;
     width: 80%;
     height: 20rem;
@@ -67,7 +68,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.1rem;
+    text-align: center;
+    font-size: .9rem;
     background-color: blanchedalmond;
     border: 2px solid black;
     border-radius: 15px;
@@ -75,4 +77,8 @@ body {
     min-height: 10rem;
     margin: 2rem;
     white-space: pre-wrap;
+}
+
+.forecast-txt {
+    margin: .5rem;
 }
